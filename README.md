@@ -27,17 +27,16 @@ Run on Android device/emulator.
 
 ## Done
 * Home screen: Login with Google and show user info.
-* Movies screen: List of popolar movies (page 1)
+* Movies screen: List of popolar movies.
 * MovieDetails screen: Show movie details and add/remove favorite actions.
 
 ## To Improve
 * Facebbok SignIn - Home screen.
-* Pagination - Movies screen.
 * Favorites badge - to show number of favorites and navigate to Favorites screen.
 * Persist storage - persist store data: user and favorites, for init data next launch.
 
 ## Apk link to download
-  [IsracardTMDB.Apk](https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40esti_suissa/isracard_tmdb-6df8b11e30ba46a38abe03ef05dfce21-signed.apk)
+  [IsracardTMDB.Apk](https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40esti_suissa/isracard_tmdb-b028fd0d5c2144a1879527e7f71197fb-signed.apk)
  
 
 
