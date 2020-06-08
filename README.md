@@ -31,7 +31,7 @@ Run on Android device/emulator.
 * MovieDetails screen: Show movie details and add/remove favorite actions.
 
 ## To Improve
-* Facebbok SignIn - Home screen.
+* Facebook SignIn - Home screen.
 * Favorites badge - to show number of favorites and navigate to Favorites screen.
 * Persist storage - persist store data: user and favorites, for init data next launch.
 
