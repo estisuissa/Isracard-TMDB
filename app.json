@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "isracard_home_task",
-    "slug": "isracard_home_task",
+    "name": "Isracard TMDB",
+    "slug": "isracard_tmdb",
     "platforms": [
       "ios",
       "android",
@@ -23,6 +23,12 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "android": {
+      "package": "com.isracard.tmdb",
+      "versionCode": 1
+    },
+    "description": "",
+    "githubUrl": "https://github.com/estisuissa/Isracard-TMDB"
   }
 }
