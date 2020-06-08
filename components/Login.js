@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
 import * as Google from 'expo-google-app-auth';
-import { androidClientId } from '../utils/strings';
+import { androidClientId ,androidStandaloneAppClientId} from '../utils/strings';
 import { setUser } from '../redux/actions/user'
 import { useDispatch } from 'react-redux';
 
@@ -18,27 +18,29 @@ const Login = ({ navigation }) => {
     async function signInWithGoogleAsync() {
         try {
             const result = await Google.logInAsync({
-                androidClientId: androidClientId,
+                androidClientId,
+                androidStandaloneAppClientId,
                 scopes: ['profile', 'email'],
             });
 
             if (result.type === 'success') {
                 return result;
             } else {
-                return { cancelled: true };
+                return { message:'cancelled' };
             }
         } catch (e) {
-            return { error: true };
+            return { message:e.message };
         }
     }
     
     const loginWithGoogle = async () => {
         console.log('loginWithGoogle');
-        const { user, cancelled, error } = await signInWithGoogleAsync();
+        const result =  await signInWithGoogleAsync();
+        const { user, message } =result
         if (user) {
             dispatch(setUser(user));
         } else {
-            alert('SignIn with google not complited.')
+            alert(`SignIn with Google failed. Message: ${message}`)
         }
 
     }
