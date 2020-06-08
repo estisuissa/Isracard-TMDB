@@ -20,10 +20,10 @@ Run in web browser.
 Run on Android device/emulator.
 
 ## Tech stack
-1. React (function components, hooks)
-2. Redux (react-redux)
-3. react-navigation
-4. expo-google-app-auth
+* React (function components, hooks)
+* Redux (react-redux)
+* react-navigation
+* expo-google-app-auth
 
 ## Done
 * Home screen: Login with Google and show user info.
@@ -35,5 +35,9 @@ Run on Android device/emulator.
 * Pagination - Movies screen.
 * Favorites badge - to show number of favorites and navigate to Favorites screen.
 * Persist storage - persist store data: user and favorites, for init data next launch.
+
+## Apk link to download
+  [IsracardTMDB.Apk](https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40esti_suissa/isracard_tmdb-6df8b11e30ba46a38abe03ef05dfce21-signed.apk)
+ 
 
 
